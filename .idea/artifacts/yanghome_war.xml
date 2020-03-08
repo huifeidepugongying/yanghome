@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="yanghome:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="yanghome-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="yanghome:war exploded" />
+    </root>
+  </artifact>
+</component>

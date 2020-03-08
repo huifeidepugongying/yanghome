@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="travel:war exploded">
+    <output-path>E:/教程/java/Java新/04-Web项目旅游网/day25_综合案例1/代码/travel/target/travel-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="travel" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="E:/教程/java/Java新/04-Web项目旅游网/day25_综合案例1/代码/travel/target/travel-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="travel/web/Web" />
+    </root>
+  </artifact>
+</component>

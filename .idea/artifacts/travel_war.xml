@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="travel:war">
+    <output-path>E:/教程/java/Java新/04-Web项目旅游网/day25_综合案例1/代码/travel/target</output-path>
+    <root id="archive" name="travel-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="travel:war exploded" />
+    </root>
+  </artifact>
+</component>
