@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://E:/教程/java/Java新/04-Web项目旅游网/day25_综合案例1/代码/travel" />
     <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://E:/教程/java/Java新/04-Web项目旅游网/day25_综合案例1/代码/travel" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="E:/教程/java/Java新/04-Web项目旅游网/day25_综合案例1/代码/travel/pom.xml" />
       </list>
     </option>
   </component>
