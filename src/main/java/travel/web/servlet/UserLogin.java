@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 @WebServlet("/UserLogin")
 public class UserLogin extends HttpServlet {
@@ -29,11 +30,20 @@ public class UserLogin extends HttpServlet {
             result.setErrorMsg("验证码为空");
             result.setFlag(false);
             ResponseUtil.write(response, result);
+
         } else if (!check.equals(checkServer)) {
             result.setErrorMsg("验证码错误");
             result.setFlag(false);
             ResponseUtil.write(response, result);
         }
+        try {
+            Method add = this.getClass().getDeclaredMethod("add", HttpServletRequest.class, HttpServletResponse.class);
+            add.setAccessible(true);
+//            Math.
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        }
+
         if (!result.isFlag()) return;
         UserService service = new UserServiceImpl();
         User user = service.getUser(userName, password);
