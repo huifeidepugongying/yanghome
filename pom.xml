@@ -7,7 +7,10 @@
     <groupId>yanghome</groupId>
     <artifactId>yanghome</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <modules>
+        <module>mybatisdemo</module>
+    </modules>
+    <packaging>pom</packaging>
     <dependencies>
         <dependency>
             <groupId>com.alibaba</groupId>
