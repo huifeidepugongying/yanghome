@@ -9,13 +9,13 @@
         <result property="userName" column="userName"/>
         <result property="birthday" column="birthday"/>
         <result property="sex" column="sex"/>
-        <collection property="accountList" column="Account">
-            <id property="id" column="id"/>
+        <collection property="accountList" column="Account" ofType="mybatis.domain.Account">
+            <id property="id" column="aId"/>
             <result property="uId" column="uId"/>
             <result property="money" column="money"/>
         </collection>
     </resultMap>
     <select id="findAll" resultMap="userAccount">
-        SELECT USER.*,Account.id,Account.uId,Account.money FROM USER JOIN Account ON USER.id=Account.uId;
+        SELECT USER.*,Account.id as aId,Account.uId,Account.money FROM USER JOIN Account ON USER.id=Account.uId;
     </select>
 </mapper>
